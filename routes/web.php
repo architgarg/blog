@@ -22,7 +22,8 @@ Route::post('posts/{post}/create', 'CommentsController@store');
 Route::get('/register','RegistrationsController@create');
 Route::post('/register','RegistrationsController@store');
 
-Route::post('/login','SessionsController@create');
+Route::get('/login','SessionsController@create');
+Route::post('/login','SessionsController@store');
 Route::get('/logout','SessionsController@destroy');
 
 
